@@ -1,5 +1,6 @@
 <?php
 // deleteAdmin.php
+require_once("functions.php");
 
 
 require_once("connect.php");
@@ -9,7 +10,7 @@ $deleteQuery = "DELETE FROM administration WHERE id = $id";
 
 if ($connect->query($deleteQuery) === TRUE) {
     
-header("location: ../admin.php");
+dd("../admin.php");
     
 
 } else {

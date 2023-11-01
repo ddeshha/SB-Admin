@@ -1,5 +1,5 @@
 <?php
-
+require_once("functions.php");
 $name = $_POST["name"];
 $price = $_POST["price"];
 $count = $_POST["count"];
@@ -31,7 +31,7 @@ require_once("connect.php");
 
                 $productQuery = $connect->query($insertProducts);
 
-                header("location: ../products.php");
+                dd(" ../products.php");
                 exit;
             } else {
                 echo "File size exceeds the limit";

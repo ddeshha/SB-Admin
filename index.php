@@ -31,7 +31,7 @@
     <div class="container">
         <!-- Outer Row -->
         <div class="row justify-content-center">
-            <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="col-xl-10 col-lg-2 col-md-9">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
@@ -71,7 +71,11 @@
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                         </div>
                                         <input type="submit" class="btn btn-primary btn-user btn-block" value="Login">
+                                        </div>
                                     </form>
+                                    <div class="text-center">
+                                <a class="small" href="admin/register.php">Already don't have an account? Register!</a>
+                            </div>
                                 </div>
                             </div>
                         </div>

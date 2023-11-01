@@ -1,12 +1,13 @@
 <?php
 require_once("connect.php");
-$id = $_GET['id'];
+require_once("functions.php");
+$id = $_POST['id'];
 
 $deleteQuery = "DELETE FROM products WHERE id = $id";
 
 if ($connect->query($deleteQuery) === TRUE) {
     
-header("location: ../products.php");
+dd("../products.php");
     
 
 } else {

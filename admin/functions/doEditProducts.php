@@ -1,6 +1,7 @@
 <?php
 
 require_once("connect.php");
+require_once("functions.php");
 
 $id = $_POST['id'];
 $name = $_POST["name"];
@@ -49,7 +50,7 @@ $queryProducts = $connect->query($updateProducts);
 
 if ($queryProducts){
 
-header("location: ../products.php");
+dd("../products.php");
 
 }else{
     $connect -> error;
